@@ -1,6 +1,6 @@
 package com.example.treker;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class Activity_Page_2 extends AppCompatActivity {
