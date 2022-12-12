@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">Treker</string>
+    <string name="app_name">Tracker</string>
+    <string name="logo_1">Дисциплины</string>
+    <string name="logo_2">пропущено</string>
+    <string name="group">ФИТ-211</string>
+    <string name="subject">Объектно-ориентированный анализ и проектирование</string>
+    <string name="subject1">Теория чисел</string>
+    <string name="subject2">Математический анализ</string>
+    <string name="subject3">Иностранный язык</string>
 </resources>
