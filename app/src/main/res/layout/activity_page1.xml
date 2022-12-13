@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:fillViewport="true">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Activity_Page_1">
 
     <TextView
         android:id="@+id/back_name_group"
@@ -25,6 +32,7 @@
         android:layout_marginStart="30sp"
         android:layout_marginTop="20sp"
         android:textSize="16sp" />
+
 
     <TextView
         android:id="@+id/down"
@@ -104,140 +112,148 @@
         android:layout_marginTop="60sp"
         android:textSize="16sp" />
 
-    <TextView
-        android:id="@+id/first_elem"
-        android:layout_marginTop="20sp"
-        android:layout_width="115sp"
-        android:layout_height="170sp"
-        android:layout_marginStart="20sp"
-        android:layout_below="@+id/my_tasks"
-        android:background="@drawable/with_border" />
-
-    <TextView
-        android:id="@+id/first_date"
-        android:layout_marginTop="30sp"
-        android:layout_marginStart="30sp"
-        android:layout_width="wrap_content"
+    <HorizontalScrollView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/first_date"
-        android:textSize="11sp"
-        android:textColor="@color/grey"
-        android:layout_below="@+id/my_tasks" />
-
-    <TextView
-        android:id="@+id/first_subject"
+        android:layout_below="@+id/my_tasks"
         android:layout_marginTop="10sp"
-        android:layout_marginStart="30sp"
-        android:layout_width="100sp"
-        android:layout_height="wrap_content"
-        android:text="@string/first_subject"
-        android:textSize="11sp"
-        android:textColor="@color/grey"
-        android:layout_below="@+id/first_date" />
+        android:layout_margin="10sp">
 
-    <TextView
-        android:id="@+id/first_task"
-        android:layout_marginTop="45sp"
-        android:layout_marginStart="30sp"
-        android:layout_width="100sp"
-        android:layout_height="wrap_content"
-        android:text="@string/first_task"
-        android:textSize="11sp"
-        android:textColor="@color/dark_grey"
-        android:layout_below="@+id/first_subject" />
-
-    <TextView
-        android:id="@+id/second_elem"
-        android:layout_marginTop="20sp"
-        android:layout_width="115sp"
-        android:layout_height="170sp"
-        android:layout_marginStart="30sp"
-        android:layout_toEndOf="@id/first_elem"
-        android:layout_below="@+id/my_tasks"
-        android:background="@drawable/with_border" />
-
-    <TextView
-        android:id="@+id/second_date"
-        android:layout_marginTop="30sp"
-        android:layout_marginStart="95sp"
-        android:layout_toEndOf="@id/first_date"
+        <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/second_date"
-        android:textSize="11sp"
-        android:textColor="@color/grey"
-        android:layout_below="@+id/my_tasks" />
+        android:layout_height="200sp"
+        android:orientation="horizontal">
 
+        <LinearLayout
+            android:layout_width="115sp"
+            android:layout_height="170sp"
+            android:layout_marginStart="5sp"
+            android:layout_marginTop="15sp"
+            android:orientation="vertical"
+            android:background="@drawable/with_border">
+
+            <TextView
+                android:id="@+id/first_date"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/first_date"
+                android:textSize="11sp"
+                android:textColor="@color/grey" />
+
+            <TextView
+                android:id="@+id/first_subject"
+                android:layout_marginTop="15sp"
+                android:layout_marginStart="10sp"
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:text="@string/first_subject"
+                android:textSize="11sp"
+                android:textColor="@color/grey" />
+
+            <TextView
+                android:id="@+id/first_task"
+                android:layout_marginTop="40sp"
+                android:layout_marginStart="10sp"
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:text="@string/first_task"
+                android:textSize="11sp"
+                android:textColor="@color/dark_grey" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="115sp"
+            android:layout_height="170sp"
+            android:layout_marginStart="30sp"
+            android:layout_marginTop="15sp"
+            android:orientation="vertical"
+            android:background="@drawable/with_border">
+
+            <TextView
+                android:id="@+id/second_date"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/second_date"
+                android:textSize="11sp"
+                android:textColor="@color/grey" />
+
+            <TextView
+                android:id="@+id/second_subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="15sp"
+                android:text="@string/second_subject"
+                android:textColor="@color/grey"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/second_task"
+                android:layout_marginTop="65sp"
+                android:layout_marginStart="10sp"
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:text="@string/second_task"
+                android:textSize="11sp"
+                android:textColor="@color/dark_grey" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="115sp"
+            android:layout_height="170sp"
+            android:layout_marginStart="30sp"
+            android:layout_marginTop="15sp"
+            android:orientation="vertical"
+            android:background="@drawable/with_border">
+
+            <TextView
+                android:id="@+id/third_date"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/third_date"
+                android:textSize="11sp"
+                android:textColor="@color/grey" />
+
+            <TextView
+                android:id="@+id/third_subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="15sp"
+                android:text="@string/third_subject"
+                android:textColor="@color/grey"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/third_task"
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="60sp"
+                android:text="@string/third_task"
+                android:textColor="@color/dark_grey"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </HorizontalScrollView>
+    
+       
     <TextView
-        android:id="@+id/second_subject"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/second_date"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="13dp"
-        android:layout_toEndOf="@id/first_subject"
-        android:text="@string/second_subject"
-        android:textColor="@color/grey"
-        android:textSize="11sp" />
-
-    <TextView
-        android:id="@+id/second_task"
-        android:layout_marginTop="70sp"
-        android:layout_marginStart="50sp"
-        android:layout_width="90sp"
-        android:layout_height="wrap_content"
-        android:text="@string/second_task"
-        android:layout_toEndOf="@id/first_task"
-        android:textSize="11sp"
-        android:textColor="@color/dark_grey"
-        android:layout_below="@+id/second_subject" />
-
-    <TextView
-        android:id="@+id/third_elem"
-        android:layout_marginTop="20sp"
-        android:layout_width="115sp"
-        android:layout_height="170sp"
-        android:layout_marginStart="30sp"
-        android:layout_toEndOf="@id/second_elem"
-        android:layout_below="@+id/my_tasks"
-        android:background="@drawable/with_border" />
-
-    <TextView
-        android:id="@+id/third_date"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/my_tasks"
-        android:layout_marginStart="86dp"
-        android:layout_marginTop="28dp"
-        android:layout_toEndOf="@id/second_date"
-        android:text="@string/third_date"
-        android:textColor="@color/grey"
-        android:textSize="11sp" />
-
-    <TextView
-        android:id="@+id/third_subject"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/third_date"
-        android:layout_marginStart="72dp"
-        android:layout_marginTop="11dp"
-        android:layout_toEndOf="@id/second_subject"
-        android:text="@string/third_subject"
-        android:textColor="@color/grey"
-        android:textSize="11sp" />
-
-    <TextView
-        android:id="@+id/third_task"
-        android:layout_width="100sp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/third_subject"
-        android:layout_marginStart="54dp"
-        android:layout_marginTop="25dp"
-        android:layout_toEndOf="@id/second_task"
-        android:text="@string/third_task"
-        android:textColor="@color/dark_grey"
-        android:textSize="11sp" />
-
+        android:layout_width="match_parent"
+        android:layout_height="358dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/border" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="358dp"
@@ -509,4 +525,7 @@
         android:textColor="@color/grey"
         android:textSize="10sp"/>
 
+
+
 </RelativeLayout>
+</ScrollView>
