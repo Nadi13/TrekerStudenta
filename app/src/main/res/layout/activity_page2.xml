@@ -37,8 +37,8 @@
             android:id="@+id/base"
             android:layout_width="20dp"
             android:layout_height="18dp"
-            android:layout_marginStart="80dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="16dp"
             android:background="@drawable/base"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -52,10 +52,13 @@
             android:layout_marginTop="15dp"
             android:text="@string/group"
             android:textColor="#404040"
+            android:textSize="11sp"
             app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.187"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1"
             tools:ignore="MissingConstraints" />
 
         <TextView
