@@ -1,9 +1,137 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity_Page_4">
+    android:background="@color/white"
+    tools:context=".activity_page4">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout
+        android:id="@+id/frame_group"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:background="@color/blue"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/group_"
+        android:layout_marginStart="30sp"
+        android:textColor="@color/textColor"
+        android:textSize="30sp"
+        android:id="@+id/group"/>
+
+    <TextView
+        android:id="@+id/skipped"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frame_group"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/skipped_"
+        android:textColor="@color/textColor"
+        android:layout_marginTop="40sp"
+        android:layout_marginStart="30sp"
+        android:textSize="20sp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/subjectRecycler"
+        android:layout_width="wrap_content"
+        android:layout_height="467dp"
+        android:layout_below="@+id/skipped"
+        android:layout_alignStart="@+id/skipped"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="27dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_alignTop="@+id/group"
+        android:layout_alignBottom="@+id/group"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="-1dp"
+        app:srcCompat="@drawable/frame_1"
+        android:contentDescription="@string/menu" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/group"
+        android:layout_alignBottom="@+id/group"
+        android:layout_toStartOf="@+id/imageView"
+        android:contentDescription="@string/menu"
+        app:srcCompat="@drawable/frame_3" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/skipped"
+        android:layout_alignBottom="@+id/skipped"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/menu"
+        app:srcCompat="@drawable/frame_4" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/menu"
+        android:layout_below="@+id/frame_group"
+        android:layout_alignBottom="@+id/imageView5"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="25dp"
+        app:srcCompat="@drawable/frame_4" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_alignTop="@+id/imageView6"
+        android:layout_alignBottom="@+id/imageView6"
+        android:layout_marginTop="4dp"
+        android:layout_toStartOf="@+id/imageView6"
+        android:text="@string/time_"
+        android:fontFamily="@font/montserrat"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/skipped"
+        android:layout_alignBottom="@+id/imageView5"
+        android:fontFamily="@font/montserrat"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="6dp"
+        android:layout_toStartOf="@+id/imageView5"
+        android:textSize="15sp"
+        android:text="@string/subject_" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/group"
+        android:layout_alignTop="@+id/group"
+        android:layout_alignBottom="@+id/group"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="4dp"
+        app:srcCompat="@drawable/frame_5"
+        android:contentDescription="@string/menu"/>
+
+
+</RelativeLayout>
