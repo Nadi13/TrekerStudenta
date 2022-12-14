@@ -47,6 +47,7 @@
 
     <string name="logo_1.3">Дисциплины</string>
     <string name="logo_2.3">пропущено</string>
+
     <string name="group">ФИТ-211</string>
     <string name="subject">Объектно-ориентированный анализ и проектирование</string>
     <string name="subject1">Теория чисел</string>
@@ -60,6 +61,7 @@
     <string name="number3">15</string>
     <string name="number4">16</string>
     <string name="number5">17</string>
+    
     <string name="lr">ЛР</string>
     <string name="Pz">ПЗ</string>
     <string name="audit">8–204</string>
@@ -84,5 +86,10 @@
     <string name="dop">Мастер-класс в Точке Кипения по разработке чат-бота</string>
     <string name="dop1">Встреча с куратором проекта</string>
 
-</resources>
+    <string name="tasks">Все задания</string>
+    <string name="task1">Сдать лабораторную работу №4</string>
+    <string name="subject2">Теория чисел</string>
+    <string name="task2">Отправить домашнее задание №3</string>
+    <string name="task3">Подготовить сообщение на тему Computer Science</string>
 
+</resources>

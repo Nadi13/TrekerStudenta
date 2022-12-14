@@ -10,11 +10,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Treker"
+        android:theme="@style/Theme.AppCompat.Light"
         tools:targetApi="31">
         <activity
             android:name=".Activity_Page_5"
-            android:exported="false">
+            android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -34,14 +34,14 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".Activity_Page_2"
+            android:name=".Activity_Page_1"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".Activity_Page_1"
+            android:name=".Activity_Page_2"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
