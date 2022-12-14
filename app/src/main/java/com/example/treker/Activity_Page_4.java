@@ -12,6 +12,7 @@ import com.example.treker.adapter.SubjectAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class Activity_Page_4 extends AppCompatActivity {
 
     RecyclerView subjectRecycler;
