@@ -11,7 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.treker.R;
-import com.example.traker.model.Subject;
+import com.example.treker.model.Subject;
 
 import java.util.List;
 

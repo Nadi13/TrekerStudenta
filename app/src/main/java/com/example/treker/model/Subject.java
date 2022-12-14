@@ -1,4 +1,4 @@
-package com.example.traker.model;
+package com.example.treker.model;
 
 public class Subject {
     final int id;

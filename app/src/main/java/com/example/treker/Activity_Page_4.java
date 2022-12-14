@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
-import com.example.traker.model.Subject;
+import com.example.treker.model.Subject;
 import com.example.treker.adapter.SubjectAdapter;
 
 import java.util.ArrayList;
