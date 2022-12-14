@@ -1,17 +1,67 @@
 <resources>
+
+    <string name="group_">ФИТ-211</string>
+    <string name="skipped_">Пропущено</string>
+    <string name="menu">Menu</string>
+    <string name="block">block</string>
+    <string name="subject_1">subject</string>
+    <string name="data_1">data</string>
+    <string name="time_1">time</string>
+    <string name="kind">kind</string>
+    <string name="time_">2022</string>
+    <string name="subject_2">дисциплина</string>
+
     <string name="app_name">Treker</string>
-    <string name="logo_1">Расписание</string>
-    <string name="logo_2">Декабрь</string>
+    <string name="name_group">ФИТ-211</string>
+    <string name="shedule">Расписание</string>
+    <string name="all_tasks">Все задания</string>
+    <string name="subjects">Дисциплины</string>
+    <string name="my_tasks">Мои задания</string>
+    <string name="first_date">16.12.2022</string>
+    <string name="first_subject">Объектно-ориентированный анализ и проектирование</string>
+    <string name="first_task">Сдача лабораторной работы №4</string>
+    <string name="second_date">20.12.2022</string>
+    <string name="second_subject">Теория чисел</string>
+    <string name="second_task">Отправить домашнее задание №3</string>
+    <string name="third_date">22.12.2022</string>
+    <string name="third_subject">Иностранный язык</string>
+    <string name="third_task">Подготовить сообщение на тему Computer Science</string>
+    <string name="today">Сегодня</string>
+    <string name="date">15.12.2022</string>
+    <string name="active_1">ЛР</string>
+    <string name="top_time_1">8:00</string>
+    <string name="bot_time_1">9:30</string>
+    <string name="active_2">ЛР</string>
+    <string name="top_time_2">9:40</string>
+    <string name="bot_time_2">11:10</string>
+    <string name="active_3">ПЗ</string>
+    <string name="text_sub_1">Объектно-ориентированный анализ и проектирование</string>
+    <string name="text_sub_2">Теория чисел</string>
+    <string name="text_sub_3">Математический анализ</string>
+    <string name="top_time_3">11:35</string>
+    <string name="bot_time_3">13:05</string>
+    <string name="active_4">ПЗ</string>
+    <string name="text_sub_4">Иностранный язык</string>
+    <string name="top_time_4">13:15</string>
+    <string name="bot_time_4">14:45</string>
+
+    <string name="logo_1.3">Дисциплины</string>
+    <string name="logo_2.3">пропущено</string>
+
     <string name="group">ФИТ-211</string>
     <string name="subject">Объектно-ориентированный анализ и проектирование</string>
     <string name="subject1">Теория чисел</string>
     <string name="subject2">Математический анализ</string>
     <string name="subject3">Иностранный язык</string>
-    <string name="number1">12</string>
-    <string name="number2">13</string>
-    <string name="number3">14</string>
-    <string name="number4">15</string>
-    <string name="number5">16</string>
+
+    <string name="logo_1.2">Расписание</string>
+    <string name="logo_2.2">Декабрь</string>
+    <string name="number1">13</string>
+    <string name="number2">14</string>
+    <string name="number3">15</string>
+    <string name="number4">16</string>
+    <string name="number5">17</string>
+    
     <string name="lr">ЛР</string>
     <string name="Pz">ПЗ</string>
     <string name="audit">8–204</string>
@@ -35,9 +85,11 @@
     <string name="time9">17:20</string>
     <string name="dop">Мастер-класс в Точке Кипения по разработке чат-бота</string>
     <string name="dop1">Встреча с куратором проекта</string>
+
     <string name="tasks">Все задания</string>
     <string name="task1">Сдать лабораторную работу №4</string>
     <string name="subject2">Теория чисел</string>
     <string name="task2">Отправить домашнее задание №3</string>
     <string name="task3">Подготовить сообщение на тему Computer Science</string>
+
 </resources>
