@@ -1,4 +1,17 @@
 <resources>
+
+    <string name="app_name">Traker</string>
+    <string name="group_">ФИТ-211</string>
+    <string name="skipped_">Пропущено</string>
+    <string name="menu">Menu</string>
+    <string name="block">block</string>
+    <string name="subject">subject</string>
+    <string name="data">data</string>
+    <string name="time">time</string>
+    <string name="kind">kind</string>
+    <string name="time_">2022</string>
+    <string name="subject_">дисциплина</string>
+
     <string name="app_name">Treker</string>
     <string name="name_group">ФИТ-211</string>
     <string name="shedule">Расписание</string>
@@ -71,5 +84,6 @@
     <string name="time9">17:20</string>
     <string name="dop">Мастер-класс в Точке Кипения по разработке чат-бота</string>
     <string name="dop1">Встреча с куратором проекта</string>
+
 </resources>
 
