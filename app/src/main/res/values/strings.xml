@@ -61,7 +61,7 @@
     <string name="number3">15</string>
     <string name="number4">16</string>
     <string name="number5">17</string>
-    
+
     <string name="lr">ЛР</string>
     <string name="Pz">ПЗ</string>
     <string name="audit">8–204</string>
@@ -91,5 +91,7 @@
     <string name="subject_2.5">Теория чисел</string>
     <string name="task2">Отправить домашнее задание №3</string>
     <string name="task3">Подготовить сообщение на тему Computer Science</string>
+
+    <string name="save">сохранено</string>
 
 </resources>

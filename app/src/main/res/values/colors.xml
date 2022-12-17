@@ -12,4 +12,9 @@
     <color name="blue">#BBDCEA</color>
     <color name="grey">#757575</color>
     <color name="dark_grey">#54595A</color>
+    <color name="beige">#D5C199</color>
+    <color name="pink">#D5AEB7</color>
+    <color name="purple">#C6AED5</color>
+    <color name="green">#C6D5AE</color>
+    <color name="light_blue">#B5BEC6</color>
 </resources>

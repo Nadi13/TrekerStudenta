@@ -19,27 +19,36 @@ public class Activity_Page_1 extends AppCompatActivity implements PopupMenu.OnMe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_page1);
-        Button btnToSecAct_1 = (Button) findViewById(R.id.shedule);
-        Button btnToSecAct_2 = (Button) findViewById(R.id.all_tasks);
-        Button btnToSecAct_3 = (Button) findViewById(R.id.subjects);
-        btnToSecAct_1.setOnClickListener(new View.OnClickListener() {
+        Button btnToSecondAct = (Button) findViewById(R.id.shedule);
+        Button btnToFifthAct = (Button) findViewById(R.id.all_tasks);
+        Button btnToThirdAct = (Button) findViewById(R.id.subjects);
+        Button btnToNotesAct = (Button) findViewById(R.id.add_1);
+        btnToSecondAct.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Activity_Page_1.this, Activity_Page_2.class);
                 startActivity(intent);
             }
         });
-        btnToSecAct_2.setOnClickListener(new View.OnClickListener() {
+        btnToFifthAct.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Activity_Page_1.this, Activity_Page_5.class);
                 startActivity(intent);
             }
         });
-        btnToSecAct_3.setOnClickListener(new View.OnClickListener() {
+        btnToThirdAct.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Activity_Page_1.this, Activity_Page_3.class);
+                startActivity(intent);
+            }
+        });
+
+        btnToNotesAct.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Activity_Page_1.this, Notes_page.class);
                 startActivity(intent);
             }
         });

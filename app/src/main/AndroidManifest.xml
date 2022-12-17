@@ -13,6 +13,20 @@
         android:theme="@style/Theme.Treker"
         tools:targetApi="31">
         <activity
+            android:name=".NotesTakerActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Notes_page"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".Activity_Page_5"
             android:exported="false">
             <meta-data
