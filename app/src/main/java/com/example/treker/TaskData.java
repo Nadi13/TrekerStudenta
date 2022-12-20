@@ -1,11 +1,11 @@
 package com.example.treker;
 
 public class TaskData {
-    String subjectName;
-    String taskName;
-    boolean reminderStatus;
-    String dateString;
-    String timeString;
+    public String subjectName;
+    public String taskName;
+    public boolean reminderStatus;
+    public String dateString;
+    public String timeString;
 
     TaskData(String subjectName,
              String taskName,

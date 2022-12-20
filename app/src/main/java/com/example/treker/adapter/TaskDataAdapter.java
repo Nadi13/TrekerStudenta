@@ -1,4 +1,4 @@
-package com.example.treker;
+package com.example.treker.adapter;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -8,6 +8,10 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.treker.R;
+import com.example.treker.TaskData;
+import com.example.treker.TasksViewHolder;
 
 import java.util.Collections;
 import java.util.List;
