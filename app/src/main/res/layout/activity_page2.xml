@@ -53,8 +53,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="30sp"
-            android:layout_marginTop="20sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
             android:text="@string/group"
             android:textColor="@color/dark_grey"
             android:textSize="16sp"
@@ -68,13 +68,13 @@
 
         <TextView
             android:id="@+id/search1"
-            android:layout_width="20sp"
-            android:layout_height="20sp"
-            android:layout_marginStart="210sp"
-            android:layout_marginTop="20sp"
-            android:layout_toEndOf="@+id/base"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="210dp"
+            android:layout_marginTop="20dp"
+
             android:background="@drawable/search"
-            app:layout_constraintBottom_toBottomOf="parent"
+
             app:layout_constraintStart_toEndOf="@+id/base"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0"
@@ -82,13 +82,11 @@
 
         <TextView
             android:id="@+id/doo"
-            android:layout_width="20sp"
-            android:layout_height="20sp"
-            android:layout_marginStart="10sp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="20dp"
-            android:layout_marginEnd="28dp"
             android:background="@drawable/menu"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/search1"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="MissingConstraints" />
