@@ -38,12 +38,13 @@ public class TaskDataAdapter extends RecyclerView.Adapter<TasksViewHolder> {
     @Override
     public void onBindViewHolder(final TasksViewHolder viewHolder, final int position){
         //final int index = viewHolder.getAdapterPosition();
-        viewHolder.subjectName.setText(taskList.get((position)).subjectName);
-        viewHolder.taskName.setText(taskList.get((position)).taskName);
-        viewHolder.dateString.setText(taskList.get((position)).dateString);
-        viewHolder.reminderStatus.setImageResource(android.R.drawable.ic_lock_idle_alarm); //.setText(taskList.get((position)).reminderStatus);
+        viewHolder.subjectName.setText(taskList.get(position).subjectName);
+        viewHolder.taskName.setText(taskList.get(position).taskName);
+        viewHolder.dateString.setText(taskList.get(position).dateString);
         viewHolder.menuButton.setImageResource(R.drawable.points);
-        viewHolder.timeString.setText(taskList.get((position)).timeString);
+        viewHolder.timeString.setText(taskList.get(position).timeString);
+
+        if (taskList.get(position).reminderStatus) viewHolder.reminderStatus.setImageResource(android.R.drawable.ic_lock_idle_alarm);
         /*viewHolder.view.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
