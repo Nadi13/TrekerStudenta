@@ -7,156 +7,52 @@
     android:background="@color/white"
     tools:context=".Activity_Page_5">
 
+    <TextView
+        android:id="@+id/down5"
+        android:layout_width="103dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/base"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="84dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="1dp"
+        android:gravity="center"
+        android:text="2022"
+        android:textColor="#404040"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@id/down5"
+        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintStart_toStartOf="@id/down5"
+        app:layout_constraintTop_toTopOf="@id/down5" />
+
+    <TextView
+        android:id="@+id/search3"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/ic_baseline_expand_more_24"
+        app:layout_constraintBottom_toBottomOf="@id/down5"
+        app:layout_constraintEnd_toEndOf="@id/down5"
+        app:layout_constraintTop_toTopOf="@id/down5" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="130dp"
+        android:elevation="2dp"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
         tools:layout_editor_absoluteX="0dp" />
-
-    <ImageView
-        android:id="@+id/dow3"
-        android:layout_width="300dp"
-        android:layout_height="64dp"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/down1"
-        app:layout_constraintStart_toStartOf="@id/dow2"
-        app:layout_constraintTop_toBottomOf="@id/dow2" />
-
-    <ImageView
-        android:id="@+id/reminder3"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginBottom="2dp"
-        android:contentDescription="reminder is not set"
-        app:layout_constraintBottom_toBottomOf="@id/dow3"
-        app:layout_constraintStart_toStartOf="@id/dow3"
-        tools:srcCompat="@android:color/transparent" />
-
-    <ImageView
-        android:id="@+id/taskMenu3"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="4dp"
-        android:contentDescription="menu"
-        app:layout_constraintEnd_toEndOf="@id/dow3"
-        app:layout_constraintTop_toTopOf="@id/dow3"
-        tools:srcCompat="@drawable/points" />
-
-    <TextView
-        android:id="@+id/subject3"
-        android:layout_width="241dp"
-        android:layout_height="32dp"
-        android:layout_marginEnd="56dp"
-        android:layout_marginBottom="4dp"
-        android:fontFamily="sans-serif-medium"
-        android:gravity="start|center_vertical"
-        android:text="@string/subject3"
-        android:textColor="#404040"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@id/dow3"
-        app:layout_constraintEnd_toEndOf="@id/dow3" />
-
-    <TextView
-        android:id="@+id/task3"
-        android:layout_width="241dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="4dp"
-        android:fontFamily="sans-serif-medium"
-        android:gravity="start|center_vertical"
-        android:text="@string/task3"
-        android:textColor="#404040"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="@id/dow3"
-        app:layout_constraintTop_toTopOf="@id/dow3" />
-
-    <TextView
-        android:id="@+id/time3"
-        android:layout_width="62dp"
-        android:layout_height="24dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginBottom="2dp"
-        android:gravity="center"
-        android:textColor="@color/gray"
-        android:textSize="11sp"
-        app:layout_constraintBottom_toBottomOf="@id/dow3"
-        app:layout_constraintEnd_toEndOf="@id/dow3" />
-
-    <ImageView
-        android:id="@+id/dow2"
-        android:layout_width="300dp"
-        android:layout_height="64dp"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/down1"
-        app:layout_constraintStart_toStartOf="@+id/dow"
-        app:layout_constraintTop_toBottomOf="@+id/dow" />
-
-    <ImageView
-        android:id="@+id/reminder2"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginBottom="2dp"
-        android:contentDescription="reminder"
-        app:layout_constraintBottom_toBottomOf="@id/dow2"
-        app:layout_constraintStart_toStartOf="@id/dow2"
-        tools:srcCompat="@android:drawable/ic_lock_idle_alarm" />
-
-    <ImageView
-        android:id="@+id/taskMenu2"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="4dp"
-        android:contentDescription="menu"
-        app:layout_constraintEnd_toEndOf="@id/dow2"
-        app:layout_constraintTop_toTopOf="@id/dow2"
-        tools:srcCompat="@drawable/points" />
-
-    <TextView
-        android:id="@+id/subject2"
-        android:layout_width="241dp"
-        android:layout_height="32dp"
-        android:layout_marginEnd="56dp"
-        android:layout_marginBottom="4dp"
-        android:fontFamily="sans-serif-medium"
-        android:gravity="start|center_vertical"
-        android:text="@string/subject1"
-        android:textColor="#404040"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@id/dow2"
-        app:layout_constraintEnd_toEndOf="@id/dow2" />
-
-    <TextView
-        android:id="@+id/task2"
-        android:layout_width="241dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="4dp"
-        android:fontFamily="sans-serif-medium"
-        android:gravity="start|center_vertical"
-        android:text="@string/task2"
-        android:textColor="#404040"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="@id/dow2"
-        app:layout_constraintTop_toTopOf="@id/dow2" />
-
-    <TextView
-        android:id="@+id/time2"
-        android:layout_width="62dp"
-        android:layout_height="24dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginBottom="2dp"
-        android:gravity="center"
-        android:text="@string/time"
-        android:textColor="@color/gray"
-        android:textSize="11sp"
-        app:layout_constraintBottom_toBottomOf="@id/dow2"
-        app:layout_constraintEnd_toEndOf="@id/dow2" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
@@ -236,7 +132,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/base"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/down5"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
         tools:ignore="MissingConstraints" />
 
@@ -266,81 +162,18 @@
         app:layout_constraintEnd_toEndOf="@+id/down"
         app:layout_constraintTop_toTopOf="@+id/down" />
 
-
-    <ImageView
-        android:id="@+id/dow"
-        android:layout_width="300dp"
-        android:layout_height="64dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="40dp"
-        android:background="@drawable/down1"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:clickable="true"
+        android:contentDescription="@android:string/untitled"
+        app:backgroundTint="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/recyclerView"
-        tools:ignore="MissingConstraints" />
+        app:srcCompat="@drawable/add" />
 
-    <TextView
-        android:id="@+id/subject"
-        android:layout_width="241dp"
-        android:layout_height="32dp"
-        android:layout_marginEnd="56dp"
-        android:layout_marginBottom="4dp"
-        android:fontFamily="sans-serif-medium"
-        android:gravity="start|center_vertical"
-        android:text="@string/subject"
-        android:textColor="#404040"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@+id/dow"
-        app:layout_constraintEnd_toEndOf="@+id/dow" />
-
-    <TextView
-        android:id="@+id/task"
-        android:layout_width="241dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="4dp"
-        android:fontFamily="sans-serif-medium"
-        android:gravity="start|center_vertical"
-        android:text="@string/task1"
-        android:textColor="#404040"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="@+id/dow"
-        app:layout_constraintTop_toTopOf="@+id/dow" />
-
-    <ImageView
-        android:id="@+id/reminder"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginBottom="2dp"
-        android:contentDescription="reminder"
-        app:layout_constraintBottom_toBottomOf="@+id/dow"
-        app:layout_constraintStart_toStartOf="@+id/dow"
-        tools:srcCompat="@android:drawable/ic_lock_idle_alarm" />
-
-    <ImageView
-        android:id="@+id/taskMenu"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="4dp"
-        android:contentDescription="menu"
-        app:layout_constraintEnd_toEndOf="@+id/dow"
-        app:layout_constraintTop_toTopOf="@+id/dow"
-        tools:srcCompat="@drawable/points" />
-
-    <TextView
-        android:id="@+id/time"
-        android:layout_width="62dp"
-        android:layout_height="24dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginBottom="2dp"
-        android:gravity="center"
-        android:text="@string/time"
-        android:textColor="@color/gray"
-        android:textSize="11sp"
-        app:layout_constraintBottom_toBottomOf="@+id/dow"
-        app:layout_constraintEnd_toEndOf="@+id/dow" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
