@@ -3,13 +3,13 @@ package com.example.treker;
 public class TaskData {
     String subjectName;
     String taskName;
-    String reminderStatus;
+    boolean reminderStatus;
     String dateString;
     String timeString;
 
     TaskData(String subjectName,
              String taskName,
-             String reminderStatus,
+             boolean reminderStatus,
              String dateString,
              String timeString){
         this.subjectName = subjectName;

@@ -1,9 +1,11 @@
 package com.example.treker;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -39,7 +41,8 @@ public class TaskDataAdapter extends RecyclerView.Adapter<TasksViewHolder> {
         viewHolder.subjectName.setText(taskList.get((position)).subjectName);
         viewHolder.taskName.setText(taskList.get((position)).taskName);
         viewHolder.dateString.setText(taskList.get((position)).dateString);
-        viewHolder.reminderStatus.setText(taskList.get((position)).reminderStatus);
+        viewHolder.reminderStatus.setImageResource(android.R.drawable.ic_lock_idle_alarm); //.setText(taskList.get((position)).reminderStatus);
+        viewHolder.menuButton.setImageResource(R.drawable.points);
         viewHolder.timeString.setText(taskList.get((position)).timeString);
         /*viewHolder.view.setOnClickListener(new View.OnClickListener(){
             @Override

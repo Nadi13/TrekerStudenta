@@ -44,9 +44,13 @@ public class Activity_Page_5 extends AppCompatActivity implements NavigationView
 
     private List<TaskData> getData(){
         List<TaskData> list = new ArrayList<>();
-        list.add(new TaskData("qwq", "lul", "lul", "date", "time"));
-        list.add(new TaskData("qwq", "lul", "lul", "date", "time"));
-        list.add(new TaskData("qwq", "lul", "lul", "date", "time"));
+        list.add(new TaskData("qwq", "lul", true, "date", "time"));
+        list.add(new TaskData("qwq", "lul", true, "date", "time"));
+        list.add(new TaskData("sjadhgfj fsafbm awenbmf wnbe fnwea bf snd nbd nfad fwe fghwe fbaemf,d svdm ,aer kjb ,bw ,fnaebsd n,vdf v dg amnsf asmn", "wehjfvqekbr kbwerkk akbdf nad gnmbas mfhwerkjq wkbd a,nm smdf ,sda gshj gjhaweiwheifu suifh iushfakjfbeaf ewam f.,me fad;rag ,rae kg sremn rmn gansg ,angf", false, "date", "time"));
+        list.add(new TaskData("qwq", "lul", false, "date", "time"));
+        list.add(new TaskData("Математическая логика и всякие прочие штуки", "Доделать ломашнее задание, потому что да", true, "12.04.2022", "12:00"));
+        list.add(new TaskData("qwq", "lul", false, "date", "time"));
+        list.add(new TaskData("qwq", "lul", false, "date", "time"));
         return list;
     }
 
