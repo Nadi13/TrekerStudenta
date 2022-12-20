@@ -7,22 +7,6 @@
     android:background="@color/white"
     tools:context=".Activity_Page_2">
 
-    <TextView
-        android:id="@+id/time2"
-        android:layout_width="30dp"
-        android:layout_height="15dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="55dp"
-        android:layout_marginEnd="10dp"
-        android:gravity="center"
-        android:text="@string/time"
-        android:textColor="@color/dark_grey"
-        android:textSize="11sp"
-        app:layout_constraintEnd_toStartOf="@+id/dow"
-        app:layout_constraintHorizontal_bias="0.476"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout1" />
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
@@ -31,7 +15,7 @@
         android:layout_alignParentTop="true"
         android:background="@drawable/border"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -84,15 +68,34 @@
             android:id="@+id/doo"
             android:layout_width="20sp"
             android:layout_height="20sp"
-            android:layout_marginStart="10sp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="20dp"
-            android:layout_marginEnd="28dp"
+            android:layout_marginEnd="20dp"
             android:background="@drawable/menu"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/search1"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
             tools:ignore="MissingConstraints" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/time2"
+        android:layout_width="30dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:text="@string/time"
+        android:textColor="@color/dark_grey"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toStartOf="@+id/dow"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout1" />
 
     <TextView
         android:id="@+id/textView"
