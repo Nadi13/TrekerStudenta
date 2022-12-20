@@ -28,10 +28,10 @@
 
     <TextView
         android:id="@+id/menu"
-        android:layout_width="20sp"
-        android:layout_height="20sp"
-        android:layout_marginStart="10sp"
-        android:layout_marginTop="20sp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
         android:layout_toEndOf="@id/search"
         android:background="@drawable/menu" />
 
@@ -43,9 +43,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="30dp"
         android:layout_marginTop="20dp"
-        android:fontFamily="@font/montserrat"
         android:text="@string/group_"
-        android:textColor="@color/grey"
+        android:textColor="@color/dark_grey"
         android:textSize="16sp" />
 
     <TextView
@@ -53,9 +52,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/back_name_group"
-        android:fontFamily="@font/montserrat"
         android:text="@string/skipped_"
-        android:textColor="@color/grey"
+        android:textColor="@color/dark_grey"
         android:layout_marginTop="40sp"
         android:layout_marginStart="30sp"
         android:textSize="16sp"/>
@@ -100,14 +98,13 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/grey"
+        android:textColor="@color/dark_grey"
         android:layout_alignTop="@+id/imageView6"
         android:layout_alignBottom="@+id/imageView6"
         android:layout_marginTop="4dp"
         android:layout_toStartOf="@+id/imageView6"
         android:text="@string/time_"
-        android:fontFamily="@font/montserrat"
-        android:textSize="12sp"/>
+        android:textSize="13sp"/>
 
     <TextView
         android:id="@+id/textView3"
@@ -115,24 +112,24 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/skipped"
         android:layout_alignBottom="@+id/imageView5"
-        android:fontFamily="@font/montserrat"
         android:layout_marginTop="4dp"
         android:layout_marginStart="6dp"
         android:layout_toStartOf="@+id/imageView5"
-        android:textSize="12sp"
-        android:textColor="@color/grey"
+        android:textSize="13sp"
+        android:textColor="@color/dark_grey"
         android:text="@string/subject_2" />
 
     <ImageView
         android:id="@+id/imageView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
         android:layout_alignStart="@+id/group"
         android:layout_alignTop="@+id/group"
         android:layout_alignBottom="@+id/group"
-        android:layout_marginStart="53dp"
+        android:layout_marginStart="64dp"
         android:layout_marginTop="0dp"
-        app:srcCompat="@drawable/frame_5"
-        android:contentDescription="@string/menu"/>
+        android:layout_marginBottom="1dp"
+        android:contentDescription="@string/menu"
+        app:srcCompat="@drawable/down" />
 
 </RelativeLayout>
