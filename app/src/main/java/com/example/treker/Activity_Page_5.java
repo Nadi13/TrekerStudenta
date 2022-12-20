@@ -44,13 +44,13 @@ public class Activity_Page_5 extends AppCompatActivity implements NavigationView
 
     private List<TaskData> getData(){
         List<TaskData> list = new ArrayList<>();
-        list.add(new TaskData("qwq", "lul", true, "date", "time"));
-        list.add(new TaskData("qwq", "lul", true, "date", "time"));
+        list.add(new TaskData("Математическая логика", "Доделать ДЗ", true, "12.12.2022", "12:00"));
+        list.add(new TaskData("Математический анализ", "РГР 3", true, "13.12.2022", ""));
         list.add(new TaskData("sjadhgfj fsafbm awenbmf wnbe fnwea bf snd nbd nfad fwe fghwe fbaemf,d svdm ,aer kjb ,bw ,fnaebsd n,vdf v dg amnsf asmn", "wehjfvqekbr kbwerkk akbdf nad gnmbas mfhwerkjq wkbd a,nm smdf ,sda gshj gjhaweiwheifu suifh iushfakjfbeaf ewam f.,me fad;rag ,rae kg sremn rmn gansg ,angf", false, "date", "time"));
-        list.add(new TaskData("qwq", "lul", false, "date", "time"));
-        list.add(new TaskData("Математическая логика и всякие прочие штуки", "Доделать ломашнее задание, потому что да", true, "12.04.2022", "12:00"));
-        list.add(new TaskData("qwq", "lul", false, "date", "time"));
-        list.add(new TaskData("qwq", "lul", false, "date", "time"));
+        list.add(new TaskData("Физическая культура", "да", false, "14.12.2022", ""));
+        list.add(new TaskData("Компьютерные сети", ".....", true, "15.12.2022", "12:00"));
+        list.add(new TaskData("Объектно-ориентированный анализ и проектирование", "\uD83D\uDE2D", false, "15.12.2022", "08:00"));
+        list.add(new TaskData("Иностранный язык", "Complete the presentation about England", false, "16.12.2022", "time"));
         return list;
     }
 

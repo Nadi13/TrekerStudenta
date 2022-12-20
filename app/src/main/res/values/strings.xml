@@ -97,5 +97,6 @@
     <string name="taskExample">Задание</string>
     <string name="dateExample">00.00.1234</string>
     <string name="timeExample">00:00</string>
+    <string name="addNewTask">Добавить задание</string>
 
 </resources>
