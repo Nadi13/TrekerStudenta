@@ -46,7 +46,7 @@ public class Activity_Page_5 extends AppCompatActivity implements NavigationView
         List<TaskData> list = new ArrayList<>();
         list.add(new TaskData("Математическая логика", "Доделать ДЗ", true, "12.12.2022", "12:00"));
         list.add(new TaskData("Математический анализ", "РГР 3", true, "13.12.2022", ""));
-        list.add(new TaskData("sjadhgfj fsafbm awenbmf wnbe fnwea bf snd nbd nfad fwe fghwe fbaemf,d svdm ,aer kjb ,bw ,fnaebsd n,vdf v dg amnsf asmn", "wehjfvqekbr kbwerkk akbdf nad gnmbas mfhwerkjq wkbd a,nm smdf ,sda gshj gjhaweiwheifu suifh iushfakjfbeaf ewam f.,me fad;rag ,rae kg sremn rmn gansg ,angf", false, "date", "time"));
+        list.add(new TaskData("Объектно-ориентированный анализ и проектирование", "Посмотреть, что такое IoC, зачем он нужен, почему его нужно использовать. Реализовать IStrategy для создания стратегий для создания объектов через IoC, потому что да.", false, "date", "time"));
         list.add(new TaskData("Физическая культура", "да", false, "14.12.2022", ""));
         list.add(new TaskData("Компьютерные сети", ".....", true, "15.12.2022", "12:00"));
         list.add(new TaskData("Объектно-ориентированный анализ и проектирование", "\uD83D\uDE2D", false, "15.12.2022", "08:00"));

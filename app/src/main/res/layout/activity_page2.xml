@@ -24,10 +24,9 @@
             android:id="@+id/base"
             android:layout_width="30sp"
             android:layout_height="30sp"
-            android:layout_marginStart="67dp"
             android:background="@drawable/down"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/group"
+            app:layout_constraintStart_toEndOf="@+id/group"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="MissingConstraints" />
 
@@ -38,7 +37,6 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="20dp"
             android:text="@string/group"
             android:textColor="@color/dark_grey"
             android:textSize="16sp"
@@ -47,31 +45,28 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
             tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/search1"
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:layout_marginStart="210dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
             android:background="@drawable/search"
-            app:layout_constraintStart_toEndOf="@+id/base"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/doo"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
             tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/doo"
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
             android:background="@drawable/menu"
-            app:layout_constraintStart_toEndOf="@+id/search1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
             tools:ignore="MissingConstraints" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -168,8 +163,8 @@
             android:layout_width="37dp"
             android:layout_height="26dp"
             android:layout_marginStart="22dp"
-            android:layout_marginTop="10dp"
             android:background="@drawable/ic_baseline_keyboard_double_arrow_left_24"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="MissingConstraints" />
@@ -178,9 +173,9 @@
             android:id="@+id/base5"
             android:layout_width="37dp"
             android:layout_height="26dp"
-            android:layout_marginTop="10dp"
             android:layout_marginEnd="20dp"
             android:background="@drawable/ic_baseline_keyboard_double_arrow_right_24"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="MissingConstraints" />
@@ -189,11 +184,12 @@
             android:id="@+id/numb"
             android:layout_width="38dp"
             android:layout_height="24dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
             android:text="@string/number1"
             android:textColor="@color/dark_grey"
             android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/base1"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -201,11 +197,13 @@
             android:id="@+id/numb2"
             android:layout_width="38dp"
             android:layout_height="24dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
             android:text="@string/number2"
             android:textColor="@color/dark_grey"
             android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/krug"
             app:layout_constraintStart_toEndOf="@+id/numb"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -213,8 +211,9 @@
             android:id="@+id/krug"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginStart="20dp"
             android:background="@drawable/circle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/numb4"
             app:layout_constraintStart_toEndOf="@+id/numb2"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="MissingConstraints" />
@@ -223,8 +222,7 @@
             android:id="@+id/numb3"
             android:layout_width="32dp"
             android:layout_height="29dp"
-            android:layout_marginStart="7dp"
-            android:layout_marginEnd="1dp"
+            android:gravity="center"
             android:text="@string/number3"
             android:textColor="@color/dark_grey"
             android:textSize="20sp"
@@ -237,11 +235,12 @@
             android:id="@+id/numb4"
             android:layout_width="38dp"
             android:layout_height="24dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
+            android:gravity="center"
             android:text="@string/number4"
             android:textColor="@color/dark_grey"
             android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/number"
             app:layout_constraintStart_toEndOf="@+id/krug"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -249,14 +248,13 @@
             android:id="@+id/number"
             android:layout_width="38dp"
             android:layout_height="24dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="20dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
             android:text="@string/number5"
             android:textColor="@color/dark_grey"
             android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/base5"
-            app:layout_constraintStart_toEndOf="@+id/numb4"
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
