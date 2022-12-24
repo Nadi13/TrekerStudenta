@@ -74,7 +74,7 @@
             app:layout_constraintTop_toBottomOf="@id/back_name_group">
 
             <Button
-                android:id="@+id/shedule"
+                android:id="@+id/schedule"
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
                 android:layout_marginStart="20dp"
@@ -99,8 +99,8 @@
                 android:textColor="@color/grey"
                 android:textSize="11sp"
                 app:layout_constraintEnd_toStartOf="@+id/subjects"
-                app:layout_constraintStart_toEndOf="@id/shedule"
-                app:layout_constraintTop_toTopOf="@id/shedule" />
+                app:layout_constraintStart_toEndOf="@id/schedule"
+                app:layout_constraintTop_toTopOf="@id/schedule" />
 
             <Button
                 android:id="@+id/subjects"

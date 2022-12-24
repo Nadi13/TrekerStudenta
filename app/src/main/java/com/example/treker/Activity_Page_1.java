@@ -2,15 +2,12 @@ package com.example.treker;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.PopupMenu;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class Activity_Page_1 extends AppCompatActivity implements PopupMenu.OnMenuItemClickListener {
@@ -19,7 +16,7 @@ public class Activity_Page_1 extends AppCompatActivity implements PopupMenu.OnMe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_page1);
-        Button btnToSecondAct = (Button) findViewById(R.id.shedule);
+        Button btnToSecondAct = (Button) findViewById(R.id.schedule);
         Button btnToFifthAct = (Button) findViewById(R.id.all_tasks);
         Button btnToThirdAct = (Button) findViewById(R.id.subjects);
         Button btnToNotesAct = (Button) findViewById(R.id.add_1);
